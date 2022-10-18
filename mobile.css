@@ -6,3 +6,19 @@
 html {
     font-size: 62.5%;
 }
+.header {
+    margin: 0 1rem;
+    min-width: 280px;
+    height: 200px;
+    background-color: bisque;
+}
+.header__title {
+    text-align: center;
+    color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.header__title:hover {
+    text-decoration: underline;
+}
