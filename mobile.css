@@ -22,3 +22,16 @@ html {
 .header__title:hover {
     text-decoration: underline;
 }
+.header__parrafo {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: crimson;
+}
+.main {
+    min-width: 280px;
+    height: auto;
+    background-color: blanchedalmond;
+    margin: 0 1rem;
+}
+
