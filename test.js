@@ -42,10 +42,11 @@ function dineroneto(){
 }
 
 // funciones 
-// 1.1 una funcion es un procedimiento que podemos utilizar para generar una accion ya se de validar o cambiar un tipo de dato a otro totalmente nuevo 
-// 1.2 Una funcion me sirve cuando quiero generar un nuevo tipo de dato o una nueva variable
+// 1.1 una funcion es un procedimiento que podemos utilizar para generar una accion ya se de validar o cambiar un tipo de dato a otro totalmente nuevo y para utilizar parametros y argumentos para no tener que hacer tantas variables 
+// 1.2 Una funcion me sirve cuando quiero generar un nuevo tipo de dato o una nueva variable y cuando tenemos que reutilizar codigo en otra parte en la que la necesitemos
 // 1.3 un parametro es nuestra variable dentro de la funcion cuando todavia no la llamamos
-// 1.3 un argumento es cuando llamamos la funcion entoces las variales parametros se convierten en argumentos
+// 1.3 las funciones reciben parametros cuando las creamos y cuando las llamamos se estos parametros se convierten en argumentos
+
 // 2 
 
 function presentacion (name, lastname, completeName, nickname){
@@ -55,9 +56,9 @@ function presentacion (name, lastname, completeName, nickname){
 presentacion ("Juan David", " Castro Gallego", " Juan David Castro Gallego", " Juandc");
 
 //Condicionales
-// 1.1 es una condicion que se debe cumplir para que nuestra function haga algo puede ser true o false
-// 1.2 true y false si tu condicion es true esto quiere decir que si es verdad realizara una accion. la condicion false es si no es verdad hara otra accion.  
-// 1.3 si
+// 1.1 es una condicion que se debe cumplir para que nuestra function o bloque de codigo dependiendo de alguna condicion o validacion.
+// 1.2 else, else if: estos nos permiten hacer validaciones completamente distintas dependiendo si es true o false y podemos utilizar diferentes condiciones o variables. en switch en cambio solo se puede dar una condicional y este tendra muchos casos pero siempre bajo la misma variable o condicion.  
+// 1.3 si las funciones pueden encapsular cualquier bloque de codigo, incluyendo condicionales
 
 // 2
 
@@ -70,10 +71,30 @@ if (tipoDeSuscripcion == "basica") {
         console.log (texto + tipoDeSuscripcion);
 }   else if (tipoDeSuscripcion == "experta"){
     console.log (texto + tipoDeSuscripcion);
-}   else (tipoDeSuscripcion == "experta+") 
+}   if (tipoDeSuscripcion == "experta+") 
         console.log(texto + tipoDeSuscripcion);
 
 // 3
+
+const texto = "tu suscripcion es";
+
+function conseguirTipoSuscripcion (suscripcion){
+if (suscripcion == "basica") {
+    console.log (texto + " " + suscripcion)    
+    return;
+    }      
+    if (suscripcion == "gratis") {
+    console.log (texto + " " + suscripcion);
+    return;
+    }      
+    if (suscripcion == "experta"){
+    console.log (texto + " " + suscripcion);
+    return;
+    }       
+    if (suscripcion == "experta+") 
+        console.log(texto + " " + suscripcion);
+    return;
+}
 
 const suscripciones = [" basica"," gratis"," experta"," experta+"]
 
@@ -86,9 +107,9 @@ for(var i = 0; i < suscripciones.length; i++){
 }
 
 //Ciclos
-// 1.1 un loop es la forma de hacer que una tarea se repita simpre y cuando se cupla la condicion  
-// 1.2  for y while
-// 1.3 es una tarea que se esta realizando y no tiene fin y provoca que el programa o lo que sea que estemos haciendo deje de funcionar 
+// 1.1 un loop (ciclo) es la forma de hacer que una tarea se repita hasta que se cumpla una condicion.  
+// 1.2  for, while, y do while.
+// 1.3 es cuando la validacion de nuestras condicionales nunca se da y no tiene fin esto provoca que el programa o lo que sea que estemos haciendo deje de funcionar. 
 // 1.4 si
 
 // 2 
@@ -104,26 +125,23 @@ while(y >= 2){
 }
 // 3
 
-var r = parseInt(prompt("ingrese la suma de 2+2 ")) ;
-
-if (r === 4 ){
-    alert("felicidades respuesta correcta")
-} else {
-    alert("Respuesta es incorrecta")
-    var r = parseInt(prompt("ingrese la suma de 2+2 ")) ; 
+let r;
+while (r != "4") {
+    let pregunta = prompt("¿Cuanto es 2 + 2?")
+    r = pregunta;
 }
-
 // Listas
 // 1.1  es un conjunto de datos en una variable 
-// 1.2  es un conjunto de propiedades o palabras clave con su respectivo valor. 
+// 1.2  es un conjunto de datos con propiedades y palabras clave pora si mismos. 
 // 1.3  utilizamos arrays cuando tenemos una lista de valores.  utilizamos objetos para agarrar valores especificos mediante sus propiedades. 
 // 1.4  si
 
 //2
-var numeros = [1, 2, 3, 4, 5,]; 
+let numeros = [1, 2, 3, 4, 5,]; 
 
 function primerElemento(numeros){
-   return numeros[0]
+   for (let i = 0; i < numeros.length; i++)
+   console.log(numeros[i])
 }
 
 //3
@@ -135,3 +153,16 @@ function elemento(frutas){
 }
 
 //4
+let obj = {
+    nombre:"emanuel",
+    edad: 3,
+    comidasFavoritas: ["hamburguesas " , "hotcakes "]
+}
+
+const arr = Object.values(obj)
+
+function primerElementoObjeto(obj){
+    const arr = Object.values(obj);
+    for (let i = 0; i < arr.length; i++)
+    console.log(arr[i])
+ }
