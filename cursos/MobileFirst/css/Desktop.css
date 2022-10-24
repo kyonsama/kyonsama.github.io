@@ -1,0 +1,6 @@
+.main--tables-container {
+    width: 1440px;
+    min-width: 1640px;
+    display: flex;
+    justify-content: center;
+}
