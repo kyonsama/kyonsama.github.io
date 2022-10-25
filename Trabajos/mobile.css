@@ -19,21 +19,74 @@ html {
     border: var(--Text-Color) solid 0.2rem;
     min-width: 280px;
     height: 300px;
-}
-.header__navbar {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url();
+    background: linear-gradient(0deg, rgba(255,140,0,1) 25%, rgba(255,255,0,1) 57%, rgba(255,0,0,1) 87%);
+}
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    height: 20%;
+}
+.header__navbar__logo {
     height: 100%;
+    width: 100%;
+    background-image: url("./Imagenes/cooltext422074241441702.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .navbar__list{
-    width:80%;
-    height:80%;
+    list-style-type: none;
+    width: 80%;
+    height: 5rem;
     display: flex;
-    justify-content: center;
-
-    margin: 0.3rem 0.3rem;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0, 0;
+}
+.navbar__list__item {
+    text-align: center;
+    width: 7rem;
+    height: auto;
+    margin: 0, 0.2rem;
+}
+.navbar__list__link {
+   text-decoration: none;
+   color: var(--Color-contraste);
+   font-size: 1.5rem;
+   font-family: var(--Fuente-Titulos);
+}
+.navbar__list__link:active {
+    color: var(--Text-Color);
+    text-decoration: line-through;
+}
+.navbar__list__link:hover {
+    text-decoration: underline;
+}
+.header__titulo {
+    text-align: start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: var(--Text-Color);
+    width: 100%;
+    height: auto;
+    line-height: 1.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: var(--Fuente-Titulos);
+}
+.header__texto {
+    margin: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    font-family: var(--Fuente-Texto);
 }
 
