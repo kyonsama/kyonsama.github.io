@@ -6,6 +6,10 @@
     --Black: #000000;
     --Hospital-green: #ACD9B2;
     --Dark: #232830;
+    --font-Quicksand:font-family: 'Quicksand', sans-serif;
+    --font-roboto:font-family: 'Roboto', sans-serif;
+    --font-size: 1.8rem;
+    --margin-sides: 3.5rem;
 }
 * {
     box-sizing: border-box;
@@ -14,4 +18,104 @@
 }
 html {
     font-size: 62.5%;
+}
+.login__box {
+    display: grid;
+    place-items: center;
+
+    min-width: 28rem;
+    width: 100%;
+    height: 100vh;
+
+}
+.login__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    min-width: 280;
+    width: 30rem;
+    height: 100%;
+    margin: 1.6rem 0.8rem 1.6rem 0.8rem;
+}
+.logo__img {
+    width: 60%;
+    height: 20%;
+    margin: 0 auto;
+}
+.form__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    width: 100%;
+    height: 80%;
+}
+.login__title { 
+    margin: 0;
+    margin-right: 14rem;
+    text-align:start;
+    font-size: var(--font-size);
+    font-weight: bold;
+    line-height: 3.0rem;
+
+    color: var(--Black);
+}
+.login__input + .login__title {
+    margin-left: -4rem;
+}
+
+.login__input {
+    
+    height: 4rem;
+    width: 26rem;
+    margin: 0 var(--margin-sides);
+
+    border: 0.1rem solid var(--White);
+    border-radius: 0.8rem;
+    background-color: var(--color-input-text);
+}
+.primary__button {
+    width: 26rem;
+    height: 5rem;
+    margin: 4.0rem var(--margin-sides);
+    
+    
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-family: var(--font-Quicksand);
+
+    border-radius: 0.8rem;
+    color: 		#98FB98;
+    border: 0.1rem solid var(--Hospital-green);
+    background-color: var(--Hospital-green);
+}
+.login_link {
+    margin: 0 var(--margin-sides);
+
+    text-align: center;
+    font-family: var(--font-Quicksand);
+    font-size: 1.4rem;
+
+    color: #228B22;
+}
+
+.primary__button:last-child{
+    margin-bottom: 0.8rem;
+    margin-top: 16rem;
+    
+    background-color: var(--White);
+    color: 		#98FB98;
+    
+}
+@media (min-width:768px) {
+    .login__container {
+        width: 800px;
+
+    }
+    .logo__img{
+        display: none;
+    }
 }
