@@ -63,6 +63,15 @@ html {
 
     color: var(--Black);
 }
+.form__invalid-text {
+    margin-top: 3rem;
+
+    text-align: center;
+    font-family: var(--font-Quicksand);
+    font-size: 1.2rem;
+    
+    color: #FC6767;
+}
 .login__title:hover {
     cursor: pointer;
 }
@@ -81,13 +90,17 @@ html {
     background-color: var(--color-input-text);
     
 }
+.input__login--invalid{
+    border:0.1rem solid red;
+    background-color: #FFF4F4;
+}
 .login__input:hover {
     cursor: text;
 }
 .primary__button {
     width: 26rem;
     height: 5rem;
-    margin: 4.0rem var(--margin-sides);
+    margin: 3.0rem var(--margin-sides);
     
     
     font-size: var(--font-size);
@@ -98,6 +111,11 @@ html {
     color: 		#98FB98;
     border: 0.1rem solid var(--Hospital-green);
     background-color: var(--Hospital-green);
+}
+.button--invalid {
+    color: var(--color-input-text);
+    border-color: var(--Very-light-pink);
+    background-color: var(--Very-light-pink);
 }
 .primary__button:hover {
     cursor: pointer;

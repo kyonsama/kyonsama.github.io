@@ -18,15 +18,16 @@
         <div class="login__container">
             <img class="logo__img" src="./logos/logo_yard_sale.svg" alt="Logo">
             <form action="#" class="form__container">
-                <label for="Email" class="login__title">
+                <label for="Email" class="login__title login__title--invalid">
                     Email address 
                 </label>
-                <input id ="Email" class="login__input" type="text" placeholder="sona@gmail.com">
-                <label for ="Password" class="login__title">
+                <input id ="Email" class="login__input input__login--invalid" type="text" placeholder="sona@gmail.com">
+                <label for ="Password" class="login__title login__title--invalid">
                     Password
                 </label>
-                <input id ="Password" class="login__input" type="text" placeholder="*********">
-                <button class="primary__button">Log in</button>
+                <input id ="Password" class="login__input input__login--invalid" type="text" placeholder="*********">
+                <p class="form__invalid-text">Invalid user ID and password combination</p>
+                <button class="primary__button button--invalid">Log in</button>
                 <a class="login_link">
                     Forgot my password
                 </a>
