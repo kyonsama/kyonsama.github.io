@@ -1,44 +1,9 @@
-.login__container {
-    max-width: 1024px;
-    width: 800px;
-    }
-.logo__img{
+.logo__img {
     display: none;
-    }
+}
 .form__container {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    }
-.login__title {
-    font-size: 2.8rem;
-    }
-.login__text-pass-recovery {
-    width: 32rem;
-
-}    
-.login__input + .login__title {
-    margin-left: -6rem;
-    }
-.login__input {
-    width: 32rem;
-    height: 4rem;
+    padding-top: 15rem;
 }
-.primary__button {
-    margin: 3rem 0;
-    width: 50%;
-}
-.login_link {
-    padding: 1rem;
-    line-height: 6rem;
-    font-size: 2rem;
-}
-.form__invalid-text {
-    margin: 1.6rem 0;
-    padding: 0.8rem;
-    
-    font-size: 1.6rem;
-}
-.primary__button:last-child {
-    margin: 5rem;
+.form__container > .primary__button:last-child{
+    margin-top: 24rem;
 }

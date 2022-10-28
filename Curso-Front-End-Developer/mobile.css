@@ -15,6 +15,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: var(--font-roboto);
 }
 html {
     font-size: 62.5%;
@@ -41,7 +42,7 @@ html {
 }
 .logo__img {
     width: 60%;
-    height: 20%;
+    height: 190px;
     margin: 0 auto;
 }
 .form__container {
@@ -52,18 +53,27 @@ html {
     width: 100%;
     height: 100%;
 }
+.form__container > .primary__button:last-child{
+    margin-top: 23rem;
+    
+    background-color: var(--color-input-text);
+    color: var(--Hospital-green);
+}
 .login__title { 
-    margin: 0;
-    margin-right: 13rem;
+    width: 85%;
+    text-align: start;
+    margin: 0 0;
     font-size: var(--font-size);
     font-weight: bold;
     line-height: 3.0rem;
 
     color: var(--Black);
 }
+.--invalid-text {
+    color: #FC6767;
+}
 .form__invalid-text {
-    margin-top: 3rem;
-
+    margin: 1.8rem 0;
     text-align: center;
     font-family: var(--font-Quicksand);
     font-size: 1.4rem;
@@ -90,19 +100,11 @@ html {
 
     color: var(--Very-light-pink);
 }
-.login__password--recover {
-    margin-top: 2rem;
 
-}
 .login__title:hover {
     cursor: pointer;
 }
-.login__input + .login__title {
-    margin-left: -4rem;
-}
-
 .login__input {
-    
     height: 4rem;
     width: 26rem;
     margin: 0 var(--margin-sides);
@@ -112,18 +114,17 @@ html {
     background-color: var(--color-input-text);
     
 }
-.input__login--invalid{
-    border:0.1rem solid #F52E2E;
-    background-color: #FFF4F4;
-}
 .login__input:hover {
     cursor: text;
+}
+.--invalid-input {
+    border: 0.1rem solid red;
+    background-color: #FAE5E5;
 }
 .primary__button {
     width: 26rem;
     height: 5rem;
-    margin: 3rem var(--margin-sides);
-    
+    margin: 1.8rem var(--margin-sides);
     
     font-size: var(--font-size);
     font-weight: bold;
@@ -133,12 +134,6 @@ html {
     color:#98FB98;
     border: 0.1rem solid var(--Hospital-green);
     background-color: var(--Hospital-green);
-}
-
-.login__valid--mail {
-    margin-left: 2rem;
-
-    color:#F52E2E;
 }
 .button--invalid {
     margin: 0.5rem;
@@ -154,7 +149,7 @@ html {
     color: var(--White);
 }
 .login_link {
-    margin: 0 var(--margin-sides);
+    margin: 1rem var(--margin-sides);
 
     text-align: center;
     font-family: var(--font-Quicksand);
@@ -171,11 +166,76 @@ html {
     text-decoration: underline;
     color: blue;
 }
-.primary__button:last-child{
-    margin-bottom: 0.8rem;
-    margin-top: 34rem;
+.Card__email {
+    width: 85%;
     
-    background-color: var(--White);
-    color:#98FB98;
+    font-size: var(--font-size);
+    line-height: 3rem;
+    font-weight: bold;
+    font-family: var(--font-Quicksand);
+
+    color: var(--Black);
+}
+.center {
+    text-align: center;
+}
+.Card__email__recovery {
+    margin-bottom: 2rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: bold;
+    font-family: var(--font-Quicksand);
+
+    color: var(--Very-light-pink);
+}
+.Email__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 50%;
+}
+.Email__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
     
+    width: 120px;
+    height: 120px;
+
+    background-color: var(--color-input-text);
+    border-radius: 50%;
+}
+.Email__img > img {
+    width: 70px;
+    height: 50px;
+}
+.Text__email {
+    font-weight: 300;
+    font-size: 1.4rem;    
+}
+.Text__email > a {
+    margin-left: 0.5rem;
+    
+    color: var(--Hospital-green);
+}
+.secondary__button {
+    width: 26rem;
+    height: 5rem;
+    margin: 3rem var(--margin-sides);
+    
+    
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-family: var(--font-Quicksand);
+
+    border-radius: 0.8rem;
+    color:var(--White);
+    border: 0.1rem solid var(--Hospital-green);
+    background-color: var(--Hospital-green);
 }

@@ -18,14 +18,14 @@
         <div class="login__container">
             <img class="logo__img" src="./logos/logo_yard_sale.svg" alt="Logo">
             <form action="#" class="form__container">
-                <label for="Email" class="login__title login__title--invalid">
+                <label for="Email" class="login__title --invalid-text">
                     Email address 
                 </label>
-                <input id ="Email" class="login__input input__login--invalid" type="text" placeholder="sona@gmail.com">
-                <label for ="Password" class="login__title login__title--invalid">
+                <input id ="Email" class="login__input --invalid-input" type="text" placeholder="sona@gmail.com">
+                <label for ="Password" class="login__title --invalid-text">
                     Password
                 </label>
-                <input id ="Password" class="login__input input__login--invalid" type="text" placeholder="*********">
+                <input id ="Password" class="login__input --invalid-input" type="text" placeholder="*********">
                 <p class="form__invalid-text">Invalid user ID and password combination</p>
                 <button class="primary__button button--invalid">Log in</button>
                 <a class="login_link">
@@ -39,11 +39,11 @@
         <div class="login__container">
             <img class="logo__img" src="./logos/logo_yard_sale.svg" alt="Logo">
             <form action="#" class="form__container">
-                <label for="Email" class="login__title login__valid--mail">
+                <label for="Email" class="login__title --invalid-text">
                     Enter a valid mail
                 </label>
-                <input id ="Email" class="login__input input__login--invalid" type="text" placeholder="sona@gmail.com">
-                <label for ="Password" class="login__title login__title--invalid">
+                <input id ="Email" class="login__input --invalid-input" type="text" placeholder="sona@gmail.com">
+                <label for ="Password" class="login__title">
                     Password
                 </label>
                 <input id ="Password" class="login__input" type="text" placeholder="*********">
@@ -59,8 +59,8 @@
         <div class="login__container">
             <img class="logo__img" src="./logos/logo_yard_sale.svg" alt="Logo">
             <form action="#" class="form__container form--email">
-                <h1 class="login__title-pass-recovery">Password recovery</h1>
-                <p class="login__text-pass-recovery">Inform the email address used to create your account</p>
+                <h1 class="Card__email center">Password recovery</h1>
+                <p class="Card__email__recovery">Inform the email address used to create your account</p>
                 <label for="Email" class="login__title login__password--recover">
                     Email address
                 </label>
@@ -72,5 +72,56 @@
             </form> 
         </div>
     </article> 
+    <article class="login__box">
+        <div class="login__container">
+            <img class="logo__img" src="./logos/logo_yard_sale.svg" alt="Logo">
+            <h1 class="Card__email center">Email has been sent!</h1>
+            <p class="Card__email__recovery">Please check your inbox for instruccions on how to reset the password</p>
+            <div class="Email__container">    
+            <div class="Email__img"><img src="./icons/email.svg" alt="mensaje"></div>
+            <button class="secondary__button">Login</button>
+            <p class="Text__email"> din't receive the email?<a>Resend</a></p>
+            </div>
+        </div>
+    </article> 
+    <article class="login__box">
+        <div class="login__container">
+            <img class="logo__img" src="./logos/logo_yard_sale.svg" alt="Logo">
+            <form action="#" class="form__container">
+                <h1 class="Card__email center">Create a new password</h1>
+                <p class="Card__email__recovery">Enter a new password for your account</p>
+                <label for="Email" class="login__title ">
+                    Password
+                </label>
+                <input id ="Email" class="login__input" type="text" placeholder="*********">
+                <label for ="Password" class="login__title">
+                   Re-enter password
+                </label>
+                <input id ="Password" class="login__input" type="text" placeholder="*********">
+                <button class="secondary__button">Confirm new password</button>
+            </form> 
+        </div>
+    </article> 
+    <article class="login__box">
+        <div class="login__container">
+            <img class="logo__img" src="./logos/logo_yard_sale.svg" alt="Logo">
+            <form action="#" class="form__container">
+                <h1 class="Card__email">My account</h1>
+                <label for="name" class="login__title">
+                    Name
+                </label>
+                <input id ="name" class="login__input" type="text" placeholder="Camila Yokoo">
+                <label for="Email" class="login__title">
+                    Email address
+                </label>
+                <input id ="Email" class="login__input" type="text" placeholder="Camilayokoo@gmail.com">
+                <label for ="Password" class="login__title">
+                   Password
+                </label>
+                <input id ="Password" class="login__input" type="text" placeholder="*********">
+                <button class="secondary__button">Create account</button>
+            </form> 
+        </div>
+    </article>
 </body>
 </html>
