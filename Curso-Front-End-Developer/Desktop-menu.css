@@ -1,0 +1,47 @@
+:root {
+    --Very-light-pink: #C7C7C7;
+    --Black: #000000;
+    --White: #FFFFFF;
+    --font-Quicksand:font-family: 'Quicksand', sans-serif;
+    --Hospital-green: #ACD9B2;
+} 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.Desktop-menu {
+    width: 160px;
+    height: auto;
+    border-radius: 6px;
+    padding: 0 1rem;
+
+    border: 0.1rem solid var(--Very-light-pink);
+}
+.Desktop-menu ul {
+    list-style: none;
+}
+.Desktop-menu ul li {
+    margin: 1rem 0;
+    text-align: end;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+}
+.Desktop-menu ul li:nth-child(3) {
+padding-top: 2.4rem;
+padding-bottom: 1.8rem;
+border-top: 1px solid var(--Very-light-pink);
+}
+.Desktop-menu ul li a {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+
+    text-decoration: none;
+    color: var(--Black); 
+}
+.Desktop-menu ul li:nth-child(3) a {
+    color: var(--Hospital-green);
+}

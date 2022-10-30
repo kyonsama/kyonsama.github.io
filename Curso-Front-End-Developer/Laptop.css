@@ -7,3 +7,7 @@
 .form__container > .primary__button:last-child{
     margin-top: 24rem;
 }
+.menu__container {
+    display: flex;
+    justify-content: center;
+}
