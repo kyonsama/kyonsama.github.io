@@ -1,0 +1,121 @@
+:root {
+    /* paleta de colores */
+    --Very-light-pink: #C7C7C7;
+    --White: #FFFFFF;
+    --color-input-text: #F7F7F7;
+    --Black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+    --font-Quicksand:font-family: 'Quicksand', sans-serif;
+    --font-roboto:font-family: 'Roboto', sans-serif;
+    --font-size: 1.8rem;
+    --margin-sides: 3.5rem;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-roboto);
+}
+html {
+    font-size: 62.5%;
+}
+.my-order__container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    min-width: 280px;
+    max-width: 600px;
+    height: 100vh;
+    margin:  2.4rem auto;
+}
+.order-box-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+
+    width: 90%;
+    font-family: var(--font-Quicksand);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+    border-radius: 0.8rem;
+    background-color:#F7F7F7;
+}
+.my-order__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    width: 100%;
+    height: 100%;
+   
+}
+.my-order__content p {
+    margin-left: 1.8rem;
+}
+.my-order__content p:last-child{
+    color: var(--Very-light-pink);
+}
+.my-orders__content--price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 100%;
+}
+.my-orders__content--price p {
+    margin-right:  1.8rem;
+}
+.my-product__details {
+    display: flex;
+    align-items: center;
+    
+    width: 90%;
+    height: 100%;
+}
+.my-product  {
+    display: grid;
+    grid-template-columns:  1fr auto auto;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+}
+.product__img {
+    display: flex;
+    align-items: center;
+    
+
+    width: 100%;
+    height: 95%;
+
+}
+.product__img img {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 2rem;
+}   
+.product__img p {
+    width: 100%;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+
+    font-size: 1.4rem;
+    font-family: var(--font-Quicksand);
+    font-weight: bold;
+    color: var(--Very-light-pink);
+}
+.product__price p {
+    text-align: end;
+    width: 100%;
+    
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}

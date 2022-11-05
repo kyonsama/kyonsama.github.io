@@ -1,0 +1,87 @@
+:root {
+    /* paleta de colores */
+    --Very-light-pink: #C7C7C7;
+    --White: #FFFFFF;
+    --color-input-text: #F7F7F7;
+    --Black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+    --font-Quicksand:font-family: 'Quicksand', sans-serif;
+    --font-roboto:font-family: 'Roboto', sans-serif;
+    --font-size: 1.8rem;
+    --margin-sides: 3.5rem;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-roboto);
+}
+html {
+    font-size: 62.5%;
+}
+.my-order__container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(7, 1fr);
+
+    width: 100%;
+    height: 100vh;
+}
+.my-order__container .my-order__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 1rem;
+}
+.my-order__container .my-order__content--price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 0.5rem;
+}
+.my-order__container .my-order__content--price p {
+    text-align: end;
+
+    height: 50%;
+    width: 50%;
+    padding-top: 1.4rem;
+    padding-right: 1.4rem;
+    
+    font-family: var(--font-Quicksand);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.4rem; 
+}
+.my-order__container .my-order__content--price span {
+    background-image: url('./icons/flechita.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: 0.5rem;
+}
+.my-order__content p:first-child {
+    height: 50%;
+    width: 50%;
+    
+    font-family: var(--font-Quicksand);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    padding-top: 3rem;
+}
+.my-order__content p:last-child {
+    height: 50%;
+    width: 50%;
+    
+    font-size: 1.4;
+    font-weight: 300;
+    font-family: var(--font-roboto);
+
+    color: var(--Very-light-pink);
+}
