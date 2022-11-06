@@ -1,0 +1,17 @@
+:root {
+    /* paleta de colores */
+    --Very-light-pink: #C7C7C7;
+    --White: #FFFFFF;
+    --color-input-text: #F7F7F7;
+    --Black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
