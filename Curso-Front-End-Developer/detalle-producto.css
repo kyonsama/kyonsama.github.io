@@ -1,0 +1,119 @@
+:root {
+    /* paleta de colores */
+    --Very-light-pink: #C7C7C7;
+    --White: #FFFFFF;
+    --color-input-text: #F7F7F7;
+    --Black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+    --font-Quicksand:font-family: 'Quicksand', sans-serif;
+    --font-roboto:font-family: 'Roboto', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.product__detail__container {
+    min-width: 280px;
+    max-width: 580px;
+    margin: 0;
+    padding-bottom: 0.8rem;
+}
+.product__detail {
+    min-width: 280px;
+    width: 100%;
+    height: 50%;
+    padding-bottom: 24px;
+}
+.product__detail__close {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+    background-color: var(--White);
+    border-radius: 15px;
+}
+.product__detail__close img{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+   
+}
+.product__detail__close img:hover {
+    cursor: pointer;
+}
+.product__detail > img:nth-child(2){
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+.product__info {
+    width: 100%;
+    height: 50%; 
+
+    margin: 0 2.4rem;
+
+    font-size: 1.8rem;
+    font-weight: 300;
+    
+}
+.product__info > p:nth-child(1) {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.product__info p:nth-child(2){
+    margin-top: 0;
+    margin-bottom: 30px;  
+    
+    color: var(--Very-light-pink);
+} 
+.product__info p:nth-child(3) {
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+.primary__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: var(--font-Quicksand);
+
+    border-radius: 0.8rem;
+    color: #FFFFFF;
+    border: 0.1rem solid var(--Hospital-green);
+    background-color: var(--Hospital-green);
+}
+@media (min-width: 600px){
+    .product__detail__container {
+        width: 380px;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 0;
+    }
+    .product__detail > img:nth-child(2){
+       width: 100%;
+    }
+    .product__info {
+        width: 94%;
+        margin: 0 auto;
+    }
+    .primary__button {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
