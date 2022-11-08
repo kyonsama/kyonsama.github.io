@@ -17,15 +17,18 @@
 html {
     font-size: 62.5%; 
 }
+.inactive {
+    display: none;
+}
 .header__navbar-container {
  width: 100%;
- height: 100vh;
+ height: 10%;
 }
 .navbar--mobile {
     display: flex;
     max-width: 750px;
     min-width: 280px;
-    height: 50px;
+    height: 60px;
     margin: 0 auto;
     border-bottom: 1px solid var(--Very-light-pink);
     box-shadow: 0 1px 6px 1px var(--Very-light-pink);
@@ -45,12 +48,11 @@ html {
     
     width: 100%;
     height: 100%;
-    margin: 0 0.8rem;
-
 }
 .navbar__icon {
     width: 30px;
     height: auto;
+    margin: 0 0.4rem;
 }
 .navbar__logo {
     width: 160px;
@@ -58,6 +60,43 @@ html {
 .navbar--desktop {
     display: none;
 }
+.Desktop-menu {
+    position: absolute;
+    width: 160px;
+    top: 60px;
+    right: 60px;
+    height: auto;
+    border-radius: 6px;
+    padding: 0 1rem;
+
+    border: 0.1rem solid var(--Very-light-pink);
+    background-color: var(--White);
+}
+.Desktop-menu ul {
+    list-style: none;
+}
+.Desktop-menu ul li {
+    margin: 1rem 0;
+    text-align: end;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+}
+.Desktop-menu ul li:nth-child(3) {
+padding-top: 2.4rem;
+padding-bottom: 1.8rem;
+border-top: 1px solid var(--Very-light-pink);
+}
+.Desktop-menu ul li a {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+
+    text-decoration: none;
+    color: var(--Black); 
+}
+.Desktop-menu ul li:nth-child(3) a {
+    color: var(--Hospital-green);
+}
+
 @media (min-width:768px){
     .navbar--mobile {
         display: none;
@@ -68,14 +107,14 @@ html {
         
         min-width: 768px;
         max-width: 1980px;
-        height: auto;
+        height: 60px;
         border-bottom: 1px solid var(--Very-light-pink);
         box-shadow: 0 1px 6px 1px var(--Very-light-pink); 
     }
     .navbar--left {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
 
         width: 100%;
         height: 100%;
@@ -86,12 +125,14 @@ html {
         justify-content: center;
         width: 140px;
         height: 30px;
+        margin: 0 0.8rem;
     }
     .navbar--left li {
         list-style: none;
         
         
         padding: 0.4rem;
+        margin: 0 0.4rem;
 
         font-size: 1.4rem;
         font-family: var(--font-Quicksand);
@@ -103,7 +144,7 @@ html {
         width: 80%;
         height: 80%;
         
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-family: var(--font-Quicksand);
         font-weight: bold;
 
@@ -127,6 +168,9 @@ html {
         list-style: none;
         color: var(--Very-light-pink);
     }
+    .navbar__email {
+        cursor: pointer;
+    }
     .flechita {
         cursor: pointer;
         width: 10px;
@@ -142,5 +186,35 @@ html {
         align-items: center;
         width: 40px;
         height: 40px;
+    }
+    .Desktop-menu {
+        width: 140px;
+    }
+    .Desktop-menu ul li a{
+        font-size: 1.6rem;
+    }
+}   
+@media (min-width:1200px){ 
+    .navbar--left li {
+        list-style: none;
+    
+    
+        padding: 0.4rem;
+        margin: 0 1.8rem;
+
+        font-size: 1.4rem;
+        font-family: var(--font-Quicksand);
+    }
+    .navbar--left li a {
+        font-size: 2rem;
+    }
+    .navbar--right li {
+        font-size: 1.8rem;
+    }
+    .Desktop-menu {
+        width: 160px
+    }
+    .Desktop-menu ul li a {
+        font-size: 2rem;
     }
 }   
