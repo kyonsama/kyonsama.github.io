@@ -17,12 +17,9 @@
 html {
     font-size: 62.5%; 
 }
-.inactive {
-    display: none;
-}
 .header__navbar-container {
- width: 100%;
- height: 10%;
+    width: 100%;
+    height: 10%;
 }
 .navbar--mobile {
     display: flex;
@@ -49,7 +46,7 @@ html {
     width: 100%;
     height: 100%;
 }
-.navbar__icon {
+.navbar--mobile__icon {
     width: 30px;
     height: auto;
     margin: 0 0.4rem;
@@ -81,9 +78,9 @@ html {
     padding: 0.8rem 1.8rem 0.8rem 1.8rem;
 }
 .Desktop-menu ul li:nth-child(3) {
-padding-top: 2.4rem;
-padding-bottom: 1.8rem;
-border-top: 1px solid var(--Very-light-pink);
+    padding-top: 2.4rem;
+    padding-bottom: 1.8rem;
+    border-top: 1px solid var(--Very-light-pink);
 }
 .Desktop-menu ul li a {
     font-size: 2rem;
@@ -96,7 +93,82 @@ border-top: 1px solid var(--Very-light-pink);
 .Desktop-menu ul li:nth-child(3) a {
     color: var(--Hospital-green);
 }
+.mobile-menu {
+    position: absolute;
+    display: grid;
+    place-items: center;
 
+    width: 300px;
+    height: 100vh;
+    padding: 0 4rem;
+    top: 60px;
+}
+.mobile-menu__bar {
+    width:100%;
+    height: 100%;
+}
+.mobile-menu__bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    width: 100%;
+    height: 100%;
+    
+}
+.mobile-menu__bar ul li{
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font-Quicksand);
+
+}
+.mobile-menu__bar ul li a {
+    text-decoration: none;
+    color: var(--Black);
+}
+.mobile-menu__bar:last-child ul li {
+    height: 50%;
+}
+.mobile-menu__bar:last-child ul li:first-child {
+    display: flex;
+    align-items: flex-end;
+
+    margin-bottom: 1.4rem;
+    border-top: 1px solid var(--Very-light-pink);
+}
+.mobile-menu__bar:last-child ul li:nth-child(2) {
+    display: flex;
+    align-items: center;
+
+}
+.mobile-menu__bar:last-child ul li:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100%;
+    
+}
+.mobile-menu__bar:last-child ul li:last-child p{
+
+    font-weight: 300;
+    font-size: 1.8rem;
+    font-family: var(--font-roboto);
+    
+    
+    color: #585555;
+}
+.mobile-menu__bar:last-child ul li:last-child a:last-child{
+    font-size: 1.8rem;
+    font-family: var(--font-roboto);
+    font-weight: 300;
+    
+    color: var(--Hospital-green);
+}
+.inactive {
+    display: none;
+}
 @media (min-width:768px){
     .navbar--mobile {
         display: none;
