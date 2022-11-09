@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./my-orders.css">
 </head>
 <body>
     <header class="header__navbar-container">
@@ -21,7 +20,7 @@
                         <img class="navbar__logo" src="./logos/logo_yard_sale.svg" alt="logo">
                 </li>
                 <li class="navbar__item">
-                        <img class="navbar--mobile__icon" src="./icons/icon_shopping_cart_notification.svg" alt="shop car">
+                        <img class="navbar--mobile__icon--car" src="./icons/icon_shopping_cart_notification.svg" alt="shop car">
                 </li>
             </ul>
             <div class="mobile-menu inactive">
@@ -107,6 +106,35 @@
             </div>
         </nav>
     </header>
+    <main class="main">
+        <div class = "in-shop-car__container inactive">
+            <aside class = "in-shop-car">
+                <div class="in-shop-car__title">
+                    <span class="in-shop-car__arrowicon"></span><h1>My order</h1>
+                </div>
+                <figure>
+                    <img src="./imagenes/Celular.png" alt="celular">
+                    <figcaption>xiaomi redmi note 11</figcaption>
+                    <p>$ 1500,00</p>
+                </figure>
+                <figure>
+                    <img src="./imagenes/Celular.png" alt="celular">
+                    <figcaption>xiaomi redmi note 11</figcaption>
+                    <p>$ 1500,00</p>
+                </figure>
+                <figure>
+                    <img src="./imagenes/Celular.png" alt="celular">
+                    <figcaption>xiaomi redmi note 11</figcaption>
+                    <p>$ 1500,00</p>
+                </figure>
+                <div class="in-shop-car__total-cost">
+                    <p>Total</p> 
+                    <p>1500,00</p>
+                </div>
+                <button class="primary__button">Checkout</button>
+            </aside>
+        </div>
+    </main>
     <script src="scripts.js"></script>
 </body>
 </html>

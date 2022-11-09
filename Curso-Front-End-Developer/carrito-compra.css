@@ -1,0 +1,122 @@
+:root {
+    /* paleta de colores */
+    --Very-light-pink: #C7C7C7;
+    --White: #FFFFFF;
+    --color-input-text: #F7F7F7;
+    --Black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+    --font-Quicksand:font-family: 'Quicksand', sans-serif;
+    --font-roboto:font-family: 'Roboto', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%; 
+}
+.in-shop-car__container {
+    min-width: 320px;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+
+
+    margin: 0 auto;
+    padding: 1rem;
+}
+.in-shop-car {
+    display: grid;
+    grid-template-rows: 40px auto;
+    row-gap: 40px;
+    place-items: center;
+    
+    width: 100%;
+    height: 100%;
+}
+.in-shop-car__title {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: var(--font-Quicksand);
+}
+.in-shop-car__arrowicon {
+    width: 15px;
+    height: 15px;
+    
+    background-image: url('./icons/flechita.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.in-shop-car > figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 100%;
+}
+.in-shop-car > figure img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 1.5rem;
+    margin: 0 0.4rem;
+}
+.in-shop-car > figure figcaption {
+
+    margin: 0 0.4rem;
+
+    font-weight: 300;
+    font-family: var(--font-Quicksand);
+    font-size: 1.2rem;
+    color: var(--Very-light-pink);
+}
+.in-shop-car > figure p {
+    margin: 0 0.4rem; 
+
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.in-shop-car__total-cost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+
+    background-color: #FBFBFB;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.primary__button {
+    width: 100%;
+    height: 5rem;
+    
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: var(--font-Quicksand);
+
+    border-radius: 0.8rem;
+    color:var(--White);
+    border: 0.1rem solid var(--Hospital-green);
+    background-color: var(--Hospital-green);
+}
+@media (min-width:600px){
+    .in-shop-car__container{
+        width: 300px;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
