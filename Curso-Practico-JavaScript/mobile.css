@@ -103,10 +103,13 @@ html {
     display: grid;
     place-items: center;
 
-    width: 300px;
+    background-color: var(--White);
+    width: 100%;
     height: 100vh;
     padding: 0 4rem;
     top: 60px;
+    left: 0;
+    z-index: 1;
 }
 .mobile-menu__bar {
     width:100%;
@@ -177,10 +180,13 @@ html {
     height: 80vh;
 }
 .in-shop-car__container {
+    position: absolute;
+    z-index: 1;
+    background-color: var(--White);
     min-width: 320px;
     width: 100%;
     max-width: 600px;
-    height: 100%;
+    height: 100vh;
 
 
     margin: 0 auto;
@@ -276,7 +282,7 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fill,15rem);
     place-content: center;
-    margin: 1rem;
+    padding: 1rem;
 }
 .Product__card {
     width:100%;
@@ -319,6 +325,85 @@ html {
 .product__info figure img{
     width: 3.5rem;
     height: 3.5rem;
+}
+.product__detail__container {
+    min-width: 280px;
+    max-width: 580px;
+    margin: 0;
+    padding-bottom: 0.8rem;
+}
+.product__detail {
+    min-width: 280px;
+    width: 100%;
+    height: 50%;
+    padding-bottom: 24px;
+}
+.product__detail__close {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+    background-color: var(--White);
+    border-radius: 15px;
+}
+.product__detail__close img{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+   
+}
+.product__detail__close img:hover {
+    cursor: pointer;
+}
+.product__detail > img:nth-child(2){
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+.product__detail--product__info {
+    width: 100%;
+    height: 50%; 
+
+    margin: 0 2.4rem;
+
+    font-size: 1.8rem;
+    font-weight: 300;
+    
+}
+.product__detail--product__info > p:nth-child(1) {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.product__detail--product__info p:nth-child(2){
+    margin-top: 0;
+    margin-bottom: 30px;  
+    
+    color: var(--Very-light-pink);
+} 
+.product__detail--product__info p:nth-child(3) {
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+.product__detail--primary__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: var(--font-Quicksand);
+
+    border-radius: 0.8rem;
+    color: #FFFFFF;
+    border: 0.1rem solid var(--Hospital-green);
+    background-color: var(--Hospital-green);
 }
 .inactive {
     display: none;
@@ -417,16 +502,39 @@ html {
     }
     .Desktop-menu {
         width: 140px;
+        z-index: 1;
+        
     }
     .Desktop-menu ul li a{
         font-size: 1.6rem;
     }
     .in-shop-car__container{
         position: absolute;
+        z-index: 2;
+        background-color: var(--White);
         top: 0;
         right: 0;
 
         width: 300px;
         height: 600px;
+    }
+    .product__detail__container {
+        width: 380px;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 0;
+    }
+    .product__detail > img:nth-child(2){
+       width: 100%;
+    }
+    .product__info {
+        width: 94%;
+        margin: 0 auto;
+    }
+    .primary__button {
+        width: 100%;
+        margin: 0 auto;
     }   
 }
