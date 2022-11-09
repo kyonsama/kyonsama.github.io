@@ -270,6 +270,56 @@ html {
     border: 0.1rem solid var(--Hospital-green);
     background-color: var(--Hospital-green);
 }
+.cards__container {
+    min-width: 280px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,15rem);
+    place-content: center;
+    margin: 1rem;
+}
+.Product__card {
+    width:100%;
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.Product__card > img{
+    width: 100%;
+    height: 15rem;
+    border-radius: 2rem;
+    object-fit: contain;   
+}
+.product__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product__info > div {
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+.Product__text-price p:first-child{
+    font-weight: 700;
+    font-family: var(--font-Quicksand);
+    
+    color: var(--Black);
+  
+}
+.Product__text-price p:last-child {
+    font-family: var(--font-roboto);
+    font-weight: 300;
+
+    color: var(--Very-light-pink);
+
+} 
+.Icon__container {
+    margin: 0;
+}
+.product__info figure img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
 .inactive {
     display: none;
 }
