@@ -327,10 +327,17 @@ html {
     height: 3.5rem;
 }
 .product__detail__container {
+    position: absolute;
+    top: 0;
+    right: 0;
     min-width: 280px;
-    max-width: 580px;
+    width:100%;
+    max-width: 680px;
     margin: 0;
     padding-bottom: 0.8rem;
+    
+
+    background-color: var(--White);
 }
 .product__detail {
     min-width: 280px;
