@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition property and duration</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-rows: auto;
+        }
+        .container {
+            position: relative;
+            background: papayawhip;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 30px;
+        }
+        .scale:hover .box{
+            transform: scale(1.2);
+        }
+        .box {
+            width: 350px;
+            height: 100%;
+        }
+        .box1 {
+            background: crimson;
+            
+        }
+        .box2 {
+            background: goldenrod;
+           
+        }
+        .box3 {
+            background: gold;
+        }
+        .scale1 {
+            transition: transform 1s;
+        }
+        .scale2 {
+            transition: transform 2s;
+        }
+        .scale3 {
+            transition: transform 3s;
+        }
+        .rotate:hover .box{
+            transform: rotate(180deg);
+        }
+        .rotate1 {
+            transition: transform 3s;
+        }
+        .rotate2 {
+            transition: transform 1s;
+        }
+        .rotate3 {
+            transition: transform 0.5s;
+        } 
+        .translate {
+            position: relative;
+        }
+        .translate .box{
+            position: absolute;
+            left: 0;
+        }
+        .translate:hover .box {
+            transform: translate(1300px);
+        }
+        .translate1{
+            transition: transform 1s;
+        }
+        .hover:hover .rueda{
+            transform: translateX(1300px) scale(2);
+        }
+        .rueda {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: crimson;
+        }
+        .animation{
+            transition: transform 1s;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Transition con Scale</h1>
+        <div class="container scale">
+            <div class="box box1 scale1"></div>
+            <div class="box box2 scale2"></div>
+            <div class="box box3 scale3"></div>
+        </div>
+        <h1>Rotate</h1>
+        <div class="container rotate">
+            <div class="box box1 rotate1"></div>
+            <div class="box box2 rotate2"></div>
+            <div class="box box3 rotate3"></div>
+        </div>
+        <h1>Translate</h1>
+        <div class="container translate">
+            <div class="box box1 translate1"></div>
+        </div>
+        <h1>rueda</h1>
+        <div class="container hover">
+            <div class="rueda animation"></div>
+        </div>
+    </main>
+</body>
+</html>
